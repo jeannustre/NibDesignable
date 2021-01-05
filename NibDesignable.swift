@@ -102,7 +102,7 @@ open class NibDesignable: UIView, NibDesignableProtocol {
 open class NibDesignableTableViewCell: UITableViewCell, NibDesignableProtocol {
 
     // MARK: - Initializer
-    override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.setupNib(in: self.contentView)
     }
